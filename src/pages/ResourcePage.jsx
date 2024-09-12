@@ -1,0 +1,23 @@
+import React from 'react'
+import Resources from '../components/Resources'
+
+const ResourcePage = () => {
+    return (
+    <>
+    <div className='container mx-auto py-24'>
+      <h1 className='text-5xl lg:text-7xl leading-snug font-bold mb-5'>
+        Today's Headlines: Stay Informed
+        <span className='text-sm text-accent pl-8'>Explore the latest news from around the world. We bring you up-to-the-minute updates on the most significant events, trends, and stories. Discover the world through our news coverage.</span>
+      </h1>
+      <p></p>
+    </div>
+
+     {/* Resources Listings */}
+     <div className='max-w-7xl mx-auto'>
+        < Resources />
+     </div>
+  </>
+  )
+}
+
+export default ResourcePage

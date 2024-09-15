@@ -1,4 +1,3 @@
-import BlogsSection from "../components/BlogsSection"
 import Features from "../components/Features"
 import Header from "../components/Header"
 import Newsletter from "../components/Newsletter"
@@ -6,16 +5,13 @@ import Testimonials from "../components/Testimonials"
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div className="min-h-screen w-full bg-black">
       < Header />
       <div className="">
         <Features />
-        <BlogsSection />      
-      <Testimonials />
-      < Newsletter />
-
+        <Testimonials />
+        < Newsletter />
       </div>
-     
     </div>
   )
 }

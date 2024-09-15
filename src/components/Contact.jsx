@@ -61,12 +61,11 @@ const Contact = () => {
                         >
                             <input type="hidden" name="form-name" value="contact" />
                             <h3 className="text-4xl font-bold ">
-                                Let's work together
+                                Contact Us
                             </h3>
                             <p className="">
-                                I am interested in great opportunities - especially ambitious
-                                and large projects. However, if you have other requests or
-                                questions, don't hesitate to contact me using the form below.
+                                If you have requests or questions regarding our blogs or resources, 
+                                don't hesitate to contact us using the form below.
                             </p>
                             {/* input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -76,7 +75,7 @@ const Contact = () => {
                                     placeholder="First name"
                                     required
                                     className="flex h-[48px] rounded-md border border-white/10
-                                                             focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-text outline-none"
+                                                             focus:border-accent font-light bg-white px-4 py-5 text-base placeholder:text-black outline-none"
                                 />
                                 <input
                                     type="text"
@@ -84,7 +83,7 @@ const Contact = () => {
                                     placeholder="Last name"
                                     required
                                     className="flex h-[48px] rounded-md border border-white/10
-                                                            focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-text outline-none"
+                                                            focus:border-accent font-light bg-white px-4 py-5 text-base placeholder:text-black outline-none"
                                 />
                                 <input
                                     type="email"
@@ -92,7 +91,7 @@ const Contact = () => {
                                     placeholder="Email"
                                     required
                                     className="flex h-[48px] rounded-md border border-white/10
-                                                            focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-text outline-none"
+                                                            focus:border-accent font-light bg-white px-4 py-5 text-base placeholder:text-black outline-none"
                                 />
                                 <input
                                     type="tel"
@@ -100,7 +99,7 @@ const Contact = () => {
                                     placeholder="Phone number"
                                     required
                                     className="flex h-[48px] rounded-md border border-white/10
-                                                            focus:border-accent font-light bg-primary px-4 py-5 text-base placeholder:text-text outline-none"
+                                                            focus:border-accent font-light bg-white px-4 py-5 text-base placeholder:text-black outline-none"
                                 />
                             </div>
                             <textarea
@@ -108,7 +107,7 @@ const Contact = () => {
                                 placeholder="Type your message here..."
                                 required
                                 className="flex min-h-[80px] h-[200px] w-full rounded-md border border-white/10
-                                                            bg-primary px-4 py-5 text-base placeholder:text-text focus-visible:outline-none
+                                                            bg-white px-4 py-5 text-base placeholder:text-black focus-visible:outline-none
                                                             focus-visible:ring-1 focus-visible:ring-accent focus-visible:ring-offset-0
                                                             disabled:cursor-not-allowed disabled:opacity-50"
                             ></textarea>

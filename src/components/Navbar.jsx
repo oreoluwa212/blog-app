@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../AuthContext';
 import  navbarIcon  from '../assets/images/navbarIcon.svg';
 import arrowIcon from '../assets/images/arrowIcon.svg' ;
 
@@ -31,6 +33,7 @@ const links = [
 const Navbar = () => {
     const pathname = useLocation().pathname;
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { user, loginWithGoogle, logout } = useContext(AuthContext);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -72,14 +75,28 @@ const Navbar = () => {
                             
                                 </div>
                             </div>
-                        </div>
+                        </div> 
+
                         <div>
-                            <Link to="/login">
-                                <button className="flex items-center gap-2 bg-primary text-black px-6 mb-8 py-2 rounded-lg shadow-md hover:bg-hover transition-all duration-300 easein mt-8">
-                                        Log In
+                            {user ? (
+                            <>
+                                <span className="text-white mr-4">Welcome, {user.displayName || user.email}</span>
+                                <Link to="/create" className="bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">Create Post</Link>
+                                <button 
+                                onClick={logout} 
+                                className="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 ml-2"
+                                >
+                                Log Out
                                 </button>
+                            </>
+                            ) : (
+                            <Link onClick={loginWithGoogle} 
+                            className="flex items-center gap-2 bg-primary text-black px-6 mb-8 py-2 rounded-lg shadow-md hover:bg-hover transition-all duration-300 easein mt-8">
+                                Log In
                             </Link>
+                            )}
                         </div>
+                        
                         <div className="-mr-4 flex md:hidden">
                             <button
                                 onClick={toggleMobileMenu}

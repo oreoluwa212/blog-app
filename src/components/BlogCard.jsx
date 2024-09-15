@@ -8,15 +8,17 @@ function BlogCard({blogs}) {
     return (
         <div className=' '>
             {blogs.length > 0 ? (
-                <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8'>
+                <div className='max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none'>
                 {
                     blogs.map((blog) => <Link key={blog.originalUrl} href={blog.originalUrl} target="_blank" rel="noopener noreferrer"
                     className='p-5 shadow-lg rounded cursor-pointer'>
                         <div>
                             {blog.images && Array.isArray(blog.images) && blog.images.length > 0 ? (
-                                <img src={blog.images[0].url} alt={blog.title || 'Blog Image'} className='max-w-sm object-scale-down' />
+                                <img src={blog.images[0].url} alt={blog.title || 'Blog Image'} 
+                                    className='object-cover h-48 w-full' width="304" height="192" />
                             ) : (
-                                <img src={BlogImage} alt='Blog Image' className='max-w-sm object-scale-down' />
+                                <img src={BlogImage} alt='Blog Image' 
+                                className='object-cover h-48 w-full' width="304" height="192" />
                             )}
                         </div>                   
                         <h3 className="mt-4 mb-2 font-bold hover:text-blue-400 cursor-pointer">

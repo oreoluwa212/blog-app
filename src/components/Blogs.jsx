@@ -19,8 +19,7 @@ const Blogs = () => {
       { name: "AI in Finance", value: "ai--in-finance" },
       { name: "AI in Robotics", value: "ai-in-robotics" },
       { name: "Machine Learning", value: "machine-learning" },      
-      { name: "AI Ethics", value: "ai-ethics" },
-      
+      { name: "AI Ethics", value: "ai-ethics" },      
     ];
 
       //page changing btn
@@ -48,7 +47,7 @@ const Blogs = () => {
             method: 'GET',
             headers: {
               'x-rapidapi-host': 'ai10.p.rapidapi.com',
-              'x-rapidapi-key': apiKey  // Replace with your actual API key
+              'x-rapidapi-key': '0e2fca4d67mshf6023e364efee7bp1abddajsn08fd4ddf5e32'  // Replace with your actual API key
             }
           });
   

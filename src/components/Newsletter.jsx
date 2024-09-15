@@ -10,7 +10,8 @@ const Newsletter = () => {
       <div className='container mx-auto max-w-5xl mb-4'>
         <div className='flex justify-center items-center bg-secondary my-8'>
           <div className='pt-32 mx-8'>
-          <h3 className='text-5xl pb-8'>NEWSLETTER SUBSCRIPTION</h3>
+            <h3 className='text-5xl pb-8'>NEWSLETTER SUBSCRIPTION</h3>
+            <p className='text-white/90 text-center pb-8'>Subscribe to our Newsletter For New & latest Blogs and Resources</p>
             <div className='flex justify-center items-center' >            
                 <input placeholder='youremail123@gmail.com ' className='text-text h-12 border-text border-2 rounded-l pl-4 pr-32 py-2 bg-transparent'  />
                 <button className='bg-primary h-12 px-6 py-3 text-black font-bold rounded-r'>

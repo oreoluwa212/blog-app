@@ -1,5 +1,4 @@
 import BlogsSection from "../components/BlogsSection"
-import CategorySection from "../components/CategorySection"
 import Features from "../components/Features"
 import Header from "../components/Header"
 import Newsletter from "../components/Newsletter"
@@ -11,8 +10,7 @@ const HomePage = () => {
       < Header />
       <div className="">
         <Features />
-        <BlogsSection />
-      {/* < CategorySection /> */}
+        <BlogsSection />      
       <Testimonials />
       < Newsletter />
 

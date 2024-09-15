@@ -1,9 +1,12 @@
 import React from 'react'
 import Resources from '../components/Resources'
 
+
 const ResourcePage = () => {
     return (
     <>
+    
+    <div>
     <div className='container mx-auto py-24'>
       <h1 className='text-5xl lg:text-7xl leading-snug font-bold mb-5'>
         Today's Headlines: Stay Informed
@@ -16,6 +19,8 @@ const ResourcePage = () => {
      <div className='max-w-7xl mx-auto'>
         < Resources />
      </div>
+     </div>
+      
   </>
   )
 }

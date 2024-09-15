@@ -8,7 +8,7 @@ function BlogCard({blogs}) {
     return (
         <div className=' '>
             {blogs.length > 0 ? (
-                <div className='max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none'>
+                <div className='max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none h-full'>
                 {
                     blogs.map((blog) => <Link key={blog.originalUrl} href={blog.originalUrl} target="_blank" rel="noopener noreferrer"
                     className='p-5 shadow-lg rounded cursor-pointer'>

@@ -7,15 +7,17 @@ const ResourceCard = ({resources}) => {
     return (
         <div className=' '>
             {resources.length > 0 ? (
-                <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8'>
+                <div className='max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none h-full'>
                 {
                     resources.map((resource) => <Link key={resource.originalUrl} href={resource.originalUrl} target="_blank" rel="noopener noreferrer"
                     className='p-5 shadow-lg rounded cursor-pointer'>
                         <div>
                             {resource.images && Array.isArray(resource.images) && resource.images.length > 0 ? (
-                                <img src={resource.images[0].url} alt={resource.title || 'Blog Image'} className='max-w-sm object-scale-down' />
+                                <img src={resource.images[0].url} alt={resource.title || 'Blog Image'} 
+                                className='object-cover h-48 w-full' width="304" height="192" />
                             ) : (
-                                <img src={BlogImage} alt='Resource Image' className='max-w-sm object-scale-down' />
+                                <img src={BlogImage} alt='Resource Image' 
+                                className='object-cover h-48 w-full' width="304" height="192" />
                             )}
                         </div>                   
                         <h3 className="mt-4 mb-2 font-bold hover:text-blue-400 cursor-pointer">
